@@ -1,12 +1,15 @@
 package com.peraza.entities;
 
 import jakarta.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "TBL_PAYMENT")
 
-public class PaymentData {
+public class PaymentData implements Serializable{
 
+    private static final long serialVersionUID = 1L;
+    
     @Id
     @Column(name = "Id_Payment", nullable = false)
     private int paymentId;
@@ -15,11 +18,13 @@ public class PaymentData {
     @JoinColumn(name = "Id_Transaction", nullable = false)
     private TransactionData transactionId;
 
-    @Column(name = "Name" ,nullable = false)
-    private String customerName;
+    @ManyToOne
+    @JoinColumn(name = "Name" ,nullable = false)
+    private CustomerData customerName;
 
-    @Column(name = "Last_Name")
-    private String customerLastName;
+    @ManyToOne
+    @JoinColumn(name = "Last_Name")
+    private CustomerData customerLastName;
 
     @Column(name = "Payment_Type", nullable = false)
     private String paymentType;
@@ -39,18 +44,18 @@ public class PaymentData {
     }
 
     public String getCustomerName() {
-        return customerName;
+        return customerName.getCustomerName();
     }
 
-    public void setCustomerName(String customerName) {
+    public void setCustomerName(CustomerData customerName) {
         this.customerName = customerName;
     }
 
     public String getCustomerLastName() {
-        return customerLastName;
+        return customerLastName.getCustomerLastName();
     }
 
-    public void setCustomerLastName(String customerLastName) {
+    public void setCustomerLastName(CustomerData customerLastName) {
         this.customerLastName = customerLastName;
     }
 
