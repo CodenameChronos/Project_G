@@ -7,7 +7,6 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "TBL_BOOK_DATA")
-
 public class BookData implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -31,6 +30,14 @@ public class BookData implements Serializable {
 
     @Column(name = "STOCK")
     private boolean available;
+    
+    @OneToOne
+    @JoinColumn(name = "RENTAL_PRICE/DAY")
+    private StockData rentalPricePerDay;
+    
+    @OneToOne
+    @JoinColumn(name = "BUY_PRICE")
+    private StockData buyPrice;
 
     @Lob
     @Column(name = "REGULAR_EXPRESSION")

@@ -1,10 +1,13 @@
 package com.peraza.entities;
 
 import jakarta.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "TBL_STOCK_DATA")
-public class StockData {
+public class StockData implements Serializable{
+    
+    private static final long serialVersionUID = 1L;
     
     @Id
     @Column
@@ -15,11 +18,19 @@ public class StockData {
     @JoinColumn(name = "ID_BOOK", nullable = false)
     private BookData BookId;
     
+    @OneToOne
+    @Column(name = "RENTAL_PRICE/DAY")
+    private double rentalPricePerDay;
+    
+    @OneToOne
+    @Column(name = "BUY_PRICE")
+    private double buyPrice;
+    
     @Column(name = "IN_STOCK", nullable = false)
     private boolean stillInStock;
     
-    @Column(name = "QUANTITY")
-    private int quantity;
+    @Column(name = "STOCK")
+    private int stock;
 
     public StockData() {
     }
@@ -48,11 +59,11 @@ public class StockData {
         this.stillInStock = stillInStock;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public int getStock() {
+        return stock;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }

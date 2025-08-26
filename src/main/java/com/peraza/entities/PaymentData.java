@@ -5,7 +5,6 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "TBL_PAYMENT")
-
 public class PaymentData implements Serializable{
 
     private static final long serialVersionUID = 1L;
@@ -17,7 +16,7 @@ public class PaymentData implements Serializable{
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ID_TRANSACTION", nullable = false)
-    private TransactionData transactionId;
+    private BillData billId;
 
     @ManyToOne
     @JoinColumn(name = "NAME" ,nullable = false)

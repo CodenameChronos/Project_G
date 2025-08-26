@@ -1,6 +1,7 @@
 package com.peraza.entities;
 
 import jakarta.persistence.*;
+import java.io.Serializable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +9,9 @@ import java.util.List;
 
 @Entity
 @Table(name = "TBL_CUSTOMER_DATA")
-public class CustomerData {
+public class CustomerData implements Serializable{
+    
+    private static final long serialVersionUID = 1L;
     
     @Id
     @Column(name = "Id_Customer", nullable = false)

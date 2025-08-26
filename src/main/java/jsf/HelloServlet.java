@@ -1,4 +1,4 @@
-package com.peraza.entities;
+package jsf;
 
 import java.io.*;
 import jakarta.servlet.http.*;
