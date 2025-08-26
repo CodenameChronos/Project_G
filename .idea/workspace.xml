@@ -4,26 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0938a6da-c78d-4f75-b2ee-2be8c0586c52" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Control/AbstractDataPersist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/BookData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/PaymentData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/TransactionData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    <list default="true" id="0938a6da-c78d-4f75-b2ee-2be8c0586c52" name="Changes" comment="Initial template">
+      <change afterPath="$PROJECT_DIR$/project-G-UML.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/RentalData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Control/AbstractDataPersist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Control/AbstractDataPersist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/BookData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/BookData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/CustomerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/CustomerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/PaymentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/PaymentData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/StockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/StockData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/TransactionData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/TransactionData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +30,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "CodenameChronos"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/CodenameChronos/Project_G.git",
+    "accountId": "e7b12fca-c069-45bc-b5b4-c0dca59f3056"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="31LAm9V2QmpuUuWwtkV8dk0659P" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,6 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -80,6 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1755293135637</updated>
       <workItem from="1755293136581" duration="9616000" />
+      <workItem from="1756171544006" duration="32000" />
     </task>
     <servers />
   </component>

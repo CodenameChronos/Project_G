@@ -1,0 +1,119 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.1">
+  <diagram name="Página-1" id="uoVrXMuLiegpYX8i_XFW">
+    <mxGraphModel dx="948" dy="470" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U7OurC-cm32bJxIPk3Zl-1" target="U7OurC-cm32bJxIPk3Zl-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U7OurC-cm32bJxIPk3Zl-1" target="U7OurC-cm32bJxIPk3Zl-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-1" value="TBL_BOOK_DATA" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445" y="40" width="270" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-2" value="idBook: Long (PK)&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-1">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-3" value="title: String&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-1">
+          <mxGeometry y="52" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-4" value="author: String&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;genre: String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;publisher: String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;stock: boolean&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;rentalPricePerDay: Double&amp;nbsp; &amp;nbsp; @OneToOne&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;buyPrice: Double&amp;nbsp; &amp;nbsp; @OneToOne&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-1">
+          <mxGeometry y="78" width="270" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U7OurC-cm32bJxIPk3Zl-5" target="U7OurC-cm32bJxIPk3Zl-45">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1280" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-5" value="TBL_CUSTOMER_DATA" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-6" value="idCustomer: Long (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-5">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-7" value="customerName: String&amp;nbsp; &amp;nbsp; @OneToMany" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-5">
+          <mxGeometry y="52" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-8" value="activeRentals: int&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;expiredRentals: int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-5">
+          <mxGeometry y="78" width="240" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-20" value="TBL_STOCK_DATA" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="240" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-21" value="idStock: Long (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-20">
+          <mxGeometry y="26" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-22" value="idBook: Long&amp;nbsp; &amp;nbsp;@OneToOne" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-20">
+          <mxGeometry y="52" width="280" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-23" value="inStock: boolean&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;quantity: int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;rentalPricePerDay: Double&amp;nbsp; &amp;nbsp; @OneToOne&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;buyPrice: Double&amp;nbsp; &amp;nbsp; @OneToOne&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-20">
+          <mxGeometry y="78" width="280" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U7OurC-cm32bJxIPk3Zl-25" target="U7OurC-cm32bJxIPk3Zl-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U7OurC-cm32bJxIPk3Zl-25" target="U7OurC-cm32bJxIPk3Zl-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-25" value="TBL_TRANSACTION_DATA" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="480" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-26" value="idTransaction: Long (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-25">
+          <mxGeometry y="26" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-27" value="idBook: Long&amp;nbsp; &amp;nbsp;@ManyToOne" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-25">
+          <mxGeometry y="52" width="200" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-28" value="transactionType: String&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;transactionDate: OffsetDateTime&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-25">
+          <mxGeometry y="78" width="200" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U7OurC-cm32bJxIPk3Zl-30" target="U7OurC-cm32bJxIPk3Zl-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-30" value="TBL_RENTAL_DATA" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="720" width="270" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-31" value="idRental: Long (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-30">
+          <mxGeometry y="26" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-32" value="idTransaction: Long&amp;nbsp; &amp;nbsp;@OneToOne" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-30">
+          <mxGeometry y="52" width="270" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-33" value="rentalStartDate: OffsetDateTime&amp;nbsp; &amp;nbsp;@OneToOne&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;rentalFinishDate: OffsetDateTime&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;returnedOnTime: boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-30">
+          <mxGeometry y="78" width="270" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U7OurC-cm32bJxIPk3Zl-34" target="U7OurC-cm32bJxIPk3Zl-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-34" value="TBL_BUY_DATA" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="720" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-35" value="idBuy: Long (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-34">
+          <mxGeometry y="26" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-36" value="idTransaction: Long&amp;nbsp; &amp;nbsp;@OneToOne" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-34">
+          <mxGeometry y="52" width="240" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-37" value="buyDate: OffsetDateTime&amp;nbsp; &amp;nbsp;@OneToOne&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;quantityBuy: Double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-34">
+          <mxGeometry y="78" width="240" height="92" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-42" value="TBL_PAYMENT_DATA" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1000" width="227.5" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-43" value="idPayment: Long (PK)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-42">
+          <mxGeometry y="26" width="227.5" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-44" value="idTransaction: Long&amp;nbsp; &amp;nbsp;@OneToOne" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-42">
+          <mxGeometry y="52" width="227.5" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="U7OurC-cm32bJxIPk3Zl-45" value="&lt;div&gt;name: String&amp;nbsp; &amp;nbsp; @ManyToOne&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;paymentType: String&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;amount: Double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="U7OurC-cm32bJxIPk3Zl-42">
+          <mxGeometry y="78" width="227.5" height="92" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

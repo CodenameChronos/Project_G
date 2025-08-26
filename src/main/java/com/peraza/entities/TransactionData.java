@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 import java.io.Serializable;
 import java.time.OffsetDateTime;
-import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "TBL_TRANSACTION")
@@ -14,18 +14,22 @@ public class TransactionData implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name = "Id_Transaction", nullable = false)
+    @Column(name = "ID_TRANSACTION", nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int transactionId;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "Id_Book", nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "ID_BOOK", nullable = false)
     private BookData bookId;
 
-    @Column(name = "Transaction_Type", nullable = false)
+    @Column(name = "TRANSACTION_TYPE", nullable = false)
     private String transactionType;
 
-    @Column(name= "Date", nullable = false)
+    @Column(name= "DATE", nullable = false)
     private OffsetDateTime transactionDate;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    private List<TransactionData> transactions;
 
     public TransactionData() {
     }
@@ -39,7 +43,7 @@ public class TransactionData implements Serializable {
     }
 
     public int getBookId() {
-        return bookId.getBookTypeID();
+        return bookId.getBookId();
     }
 
     public void setBookId(BookData bookId) {

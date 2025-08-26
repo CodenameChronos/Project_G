@@ -13,37 +13,38 @@ public class BookData implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @Column(name = "ID_BookType", nullable = false)
-    private int bookTypeID;
+    @Column(name = "ID_BOOK", nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private int bookId;
 
-    @Column(name= "Title", nullable = false)
+    @Column(name= "TITLE", nullable = false)
     private String title;
 
-    @Column(name = "Genre")
+    @Column(name = "GENRE", nullable = false)
     private String genre;
 
-    @Column(name = "Author")
+    @Column(name = "AUTHOR", unique = false)
     private String author;
 
-    @Column(name = "Publisher", nullable = false)
+    @Column(name = "PUBLISHER", nullable = false, unique = false)
     private String publisher;
 
-    @Column(name = "Stock")
+    @Column(name = "STOCK")
     private boolean available;
 
     @Lob
-    @Column(name = "Regular_Expression")
+    @Column(name = "REGULAR_EXPRESSION")
     private String regularExpression;
 
     public BookData() {
     }
 
-    public int getBookTypeID() {
-        return bookTypeID;
+    public int getBookId() {
+        return bookId;
     }
 
-    public void setBookTypeID(int bookTypeID) {
-        this.bookTypeID = bookTypeID;
+    public void setBookId(int bookId) {
+        this.bookId = bookId;
     }
 
     public String getTitle() {

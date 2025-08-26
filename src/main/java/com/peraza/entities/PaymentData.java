@@ -11,26 +11,24 @@ public class PaymentData implements Serializable{
     private static final long serialVersionUID = 1L;
     
     @Id
-    @Column(name = "Id_Payment", nullable = false)
+    @Column(name = "ID_PAYMENT", nullable = false)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int paymentId;
 
     @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "Id_Transaction", nullable = false)
+    @JoinColumn(name = "ID_TRANSACTION", nullable = false)
     private TransactionData transactionId;
 
     @ManyToOne
-    @JoinColumn(name = "Name" ,nullable = false)
+    @JoinColumn(name = "NAME" ,nullable = false)
     private CustomerData customerName;
 
-    @ManyToOne
-    @JoinColumn(name = "Last_Name")
-    private CustomerData customerLastName;
-
-    @Column(name = "Payment_Type", nullable = false)
+    @Column(name = "PAYMENT_TYPE", nullable = false)
     private String paymentType;
 
-    @Column(name = "Ammount" ,nullable = false)
+    @Column(name = "AMOUNT" ,nullable = false)
     private Double amount;
+
 
     public PaymentData() {
     }
@@ -49,14 +47,6 @@ public class PaymentData implements Serializable{
 
     public void setCustomerName(CustomerData customerName) {
         this.customerName = customerName;
-    }
-
-    public String getCustomerLastName() {
-        return customerLastName.getCustomerLastName();
-    }
-
-    public void setCustomerLastName(CustomerData customerLastName) {
-        this.customerLastName = customerLastName;
     }
 
     public String getPaymentType() {
