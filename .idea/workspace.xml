@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0938a6da-c78d-4f75-b2ee-2be8c0586c52" name="Changes" comment="Initial template">
-      <change afterPath="$PROJECT_DIR$/project-G-UML.drawio" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/RentalData.java" afterDir="false" />
+    <list default="true" id="0938a6da-c78d-4f75-b2ee-2be8c0586c52" name="Changes" comment="DualService Initial Template">
+      <change afterPath="$PROJECT_DIR$/project-G-UML.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Control/AbstractDataPersist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Control/AbstractDataPersist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/BookData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/BookData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/CustomerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/CustomerData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/PaymentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/PaymentData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/StockData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/StockData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/peraza/entities/TransactionData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/peraza/entities/TransactionData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +21,24 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Project_G/dualService" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -63,6 +74,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,11 +95,24 @@
       <option name="presentableId" value="Default" />
       <updated>1755293135637</updated>
       <workItem from="1755293136581" duration="9616000" />
-      <workItem from="1756171544006" duration="32000" />
+      <workItem from="1756171544006" duration="517000" />
     </task>
+    <task id="LOCAL-00001" summary="DualService Initial Template">
+      <option name="closed" value="true" />
+      <created>1756171623185</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756171623185</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DualService Initial Template" />
+    <option name="LAST_COMMIT_MESSAGE" value="DualService Initial Template" />
   </component>
 </project>
