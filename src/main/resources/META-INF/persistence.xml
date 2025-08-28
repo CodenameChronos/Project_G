@@ -6,6 +6,11 @@
     <persistence-unit name="persist" transaction-type="JTA">
       <jta-data-source>jdbc/projectG</jta-data-source>
       <class>com.peraza.entities.BookData</class>
-
+      <class>com.peraza.entities.BillData</class>
+      <class>com.peraza.entities.CustomerData</class>
+      <class>com.peraza.entities.PaymentData</class>
+      <class>com.peraza.entities.RentalData</class>
+      <class>com.peraza.entities.StockData</class>
+      <class>com.peraza.entities.TransactionData</class>
     </persistence-unit>
 </persistence>
